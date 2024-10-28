@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User, UserTable } from '../../Datatypes';
+import { UserTable } from '../../Datatypes';
 import { Observable, of } from 'rxjs';
 
 @Injectable({

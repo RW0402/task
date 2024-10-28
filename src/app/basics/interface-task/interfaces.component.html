@@ -1,0 +1,8 @@
+<div class="basics__title">Interfaces</div>
+<div class="basics__users" *ngFor="let user of this.users">
+  <div class="basics__name">{{ user.name }}</div>
+  <div class="basice__age">{{ user.age }}</div>
+  <div class="basics__email" *ngIf="user.email && user.email.length > 0">
+    {{ user.email }}
+  </div>
+</div>
