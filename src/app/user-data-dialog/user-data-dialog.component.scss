@@ -1,0 +1,30 @@
+.user-details {
+  width: 100%; /* Maximale Breite */
+  height: 100%; /* Maximale Höhe */
+}
+.user-details__content {
+  height: 100%;
+}
+.user-details__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.user-details__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.user-details__label {
+  font-weight: bold;
+  color: #555;
+}
+
+.user-details__value {
+  color: #777;
+  text-align: right;
+}
+

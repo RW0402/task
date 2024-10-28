@@ -1,0 +1,23 @@
+<mat-card class="user-details" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ user.fullName }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="user-details__content">
+    <div class="user-details__info">
+    <label class="user-details__label">Email:</label>
+    <span class="user-details__value">{{ user.email }}</span>
+  </div>
+  <div class="user-details__info">
+    <label class="user-details__label">Nummer:</label>
+    <span class="user-details__value">{{ user.phone }}</span>
+  </div>
+  <div class="user-details__info">
+    <label class="user-details__label">Geburtsdatum:</label>
+    <span class="user-details__value">{{ user.dateOfBirth }}</span>
+  </div>
+  </mat-card-content>
+  <mat-card-actions class="user-details__button">
+    <button mat-button (click)="closeDialog()">Close</button>
+  </mat-card-actions>
+</mat-card>

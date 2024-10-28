@@ -1,0 +1,16 @@
+.usertable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: start;
+}
+.usertable__title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.usertable__table {
+    width: 100%;
+    min-width: 1000px;
+}
