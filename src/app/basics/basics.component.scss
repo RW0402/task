@@ -1,0 +1,22 @@
+.basics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  div:child{
+    margin-bottom: 20px;
+    font-size: large;
+  }
+}
+.basics > div {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+.basics__title {
+  font-size: 2em;
+}
+.basics__users {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}

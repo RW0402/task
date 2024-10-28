@@ -1,0 +1,34 @@
+<div class="basics">
+  <div>
+    <div class="basics__title">Area Calc</div>
+    <mat-form-field>
+      <mat-label>height</mat-label>
+      <input matInput type="number" [(ngModel)]="height" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>width</mat-label>
+      <input matInput type="number" [(ngModel)]="width" />
+    </mat-form-field>
+    <button mat-flat-button (click)="calculateArea()">calculate area</button>
+    <div>area</div>
+    <div>{{ this.area }}</div>
+  </div>
+  <div>
+    <div class="basics__title">Interfaces</div>
+    <div class="basics__users" *ngFor="let user of this.users">
+      <div>{{ user.name }}</div>
+      <div>{{ user.age }}</div>
+      <div *ngIf="user.email && user.email.length > 0">
+        {{ user.email }}
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="basics__title">Generics</div>
+    <button mat-flat-button (click)="reverseArray()">reverseArray</button>
+
+      <div>
+        {{ this.outputArray }}
+      </div>
+  </div>
+</div>
