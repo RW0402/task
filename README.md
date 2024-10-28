@@ -6,22 +6,26 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Code Structure
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+All the tasks can be found in one app. Every tasks has it's own component.
+  1. `Smiley` is in the folder `smiley` and uses the template and style-file
+  2. `Typescript Basics` is in the folder `basics`. Every Subtask has its iown component. the styling for all of them is in `basics.scss`
+     2.1 The calculation task in the `calc-area` folder and contains a template with input-fields, the button and the output. The source file contains the calc function.
+     2.2 The interface and Object task is in the folder `interface-task` and contains a template to show the Objects, a source file that contains the definition. The interface is in the `Datatypes` file.
+     2.3 The Generic task is in the folder `generics` and contains a template to show the original and the reversed array and the source file that contains the function.
+  4. `The Angular App` is the intire app and the tasks were done with the components `user-list` and `user-data-dialog`, with the Service `UserService`, the file `Datatypes` and all of the `app`-files
 
-## Running end-to-end tests
+## Navigation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To navigate in the running app use the toolpar at the top
 
-## Further help
+  1. `Smiley` navigates you to the first task `the smiley `
+  2. `Typescript Basics` navigates you to the second task with its three subtasks
+  3. `App` navigates you to the third task the `angular app`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
