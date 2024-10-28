@@ -1,22 +1,62 @@
 .basics {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  div:child{
-    margin-bottom: 20px;
-    font-size: large;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.basics > div {
+
+.basics__task {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
   background-color: #f0f0f0;
   padding: 20px;
   border-radius: 5px;
+  overflow: scroll;
 }
+
 .basics__title {
   font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.basics__input{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  > :first-child {
+    margin-right: 10px;
+  }
+  > mat-form-field {
+    min-width: 80px;
+  }
+}
+
+.basics__output {
+  display: flex;
+  flex-direction: row;
+  margin-block: 20px;
+  > div {
+    margin: 0 10px;
+  }
 }
 .basics__users {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  > div {
+    margin-block: 10px;
+  }
+}
+
+.basics__name {
+  min-width: 200px;
+  font-weight: bold;
+}
+.basice__age {
+  min-width: 50px;
+  color: #777;
+}
+.basics__email {
+  min-width: 250px;
+  color: #777;
 }

@@ -12,5 +12,20 @@
 }
 .usertable__table {
     width: 100%;
-    min-width: 1000px;
+    overflow-x: scroll;
+}
+
+.mat-column-id {
+  min-width: 50px;
+}
+
+.mat-column-fullName {
+  min-width: 200;
+}
+
+.mat-column-email {
+  min-width: 250px;
+}
+.table__row {
+  min-width: 600px;
 }

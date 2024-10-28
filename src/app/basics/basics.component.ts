@@ -27,7 +27,7 @@ export class BasicsComponent {
     { name: 'Baghi', age: 4 },
     { name: 'Max Mustermann', age: 22, email: 'max.mustermann@example.com' }
   ];
-  inputArray: any[] = [1, 2, 3, 4, 5];
+  inputArray: any[] = [1, 'name', {name: 'tim', age: 22}, [1,2,3], 5];
   outputArray: any[] = [];
 
   public calculateArea(): void {
