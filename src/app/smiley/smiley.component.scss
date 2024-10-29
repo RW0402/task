@@ -2,8 +2,8 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 50vw; /* 50% der Viewport-Breite */
-  height: 50vw; /* 50% der Viewport-Breite, um das Seitenverhältnis beizubehalten */
+  width: 50vw;
+  height: 50vw;
 
   background-color: yellow;
   border-radius: 50%;
@@ -37,8 +37,8 @@
   grid-column: 2;
   grid-row: 3;
   align-self: center;
-  width: 35vw; /* 40% der Viewport-Breite */
-  height: 20vw; /* 30% der Viewport-Breite */
+  width: 35vw;
+  height: 20vw;
   overflow: hidden;
   display: grid;
   grid-template-rows: 10% 90%;

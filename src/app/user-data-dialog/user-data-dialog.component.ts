@@ -18,6 +18,6 @@ export class UserDataDialogComponent {
     @Inject(MAT_DIALOG_DATA) public user: UserTable,
   ) {}
   public closeDialog(): void {
-    this.dialogRef.close(); // Schließt das Dialogfenster
+    this.dialogRef.close();
   }
 }

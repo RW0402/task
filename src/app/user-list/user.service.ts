@@ -7,7 +7,7 @@ import { Observable, of } from 'rxjs';
 })
 export class UserService {
   private generateRandomId(): string {
-    return Math.random().toString(36).substring(2, 10); // Erzeugt eine zufällige alphanumerische ID
+    return Math.random().toString(36).substring(2, 10);
   }
   getUsers(): Observable<UserTable[]> {
     return of([
